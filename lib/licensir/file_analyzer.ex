@@ -1,3 +1,5 @@
+
+
 defmodule Licensir.FileAnalyzer do
   # The file names to check for licenses
   @license_files ["LICENSE", "LICENSE.md", "LICENSE.txt"]
@@ -11,7 +13,7 @@ defmodule Licensir.FileAnalyzer do
     gpl_v3: ["GPLv3.txt"],
     isc: ["ISC.txt", "ISC.variant-2.txt"],
     lgpl: ["LGPL.txt"],
-    mit: ["MIT.txt", "MIT.variant-2.txt", "MIT.variant-3.txt"],
+    mit: ["MIT.txt", "MIT.variant-2.txt", "MIT.variant-3.txt", "MIT.variant-4.txt"],
     mpl2: ["MPL2.txt", "MPL2_full.txt"],
     licensir_mock_license: ["LicensirMockLicense.txt"]
   ]
