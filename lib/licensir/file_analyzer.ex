@@ -12,7 +12,7 @@ defmodule Licensir.FileAnalyzer do
     isc: ["ISC.txt", "ISC.variant-2.txt"],
     lgpl: ["LGPL.txt"],
     mit: ["MIT.txt", "MIT.variant-2.txt", "MIT.variant-3.txt"],
-    mpl2: ["MPL2.txt"],
+    mpl2: ["MPL2.txt", "MPL2_full.txt"],
     licensir_mock_license: ["LicensirMockLicense.txt"]
   ]
 
