@@ -43,8 +43,6 @@ defmodule Licensir.FileAnalyzer do
             |> File.read!()
 
           # Returns true only if the content is a superset of the license text
-          IO.puts("content: #{clean(content)}")
-          IO.puts("license: #{clean(license)}")
           clean(content) =~ clean(license)
         end)
 
@@ -55,6 +53,6 @@ defmodule Licensir.FileAnalyzer do
   defp clean(content) do
     content
     |> String.replace(~r/\v/, "")
-    |> String.replace(~r/Copyright \(c\) [0-9]+ [a-zA-Z]+$/, "")
+    |> String.replace(~r/Copyright \(c\) 20[0-9][0-9] [a-zA-Z].+(\n|\r\n)+/, "")
   end
 end
